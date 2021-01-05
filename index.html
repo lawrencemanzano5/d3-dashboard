@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CPSC 583: Tutorial 2</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />   <!-- link the CSS file to style this page -->
+    <!-- the order of how you link scripts matter
+    -- i.e., you can only call functions from scripts loaded before
+    -- the script you are calling to. In this case, we want to call
+    -- functions from the D3 library in our own javascript file,
+    -- hence, the D3.js library appears above our own script.
+    -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>       <!-- link directly to the D3.js script online -->
+    <script type="text/javascript" src="main.js"></script>      <!-- link the javascript file -->
+</head>
+<body class="grid">
+<div>
+    <h1>Dashboard: Variation 2</h1>
+</div>
+<div id="div_visuals" class="grid">
+    <div id="container_vis1" class="grid">
+        <div id="title_vis1">
+            Total Average Stats by Evolution
+        </div>
+        <svg id="vis1" class="svg_boxes"></svg>
+    </div>
+    <div id="container_vis2" class="grid">
+        <div id="title_vis2">
+            Special Stats Total (Sp. Atk + Sp. Def) by Type Pairing
+        </div>
+        <svg id="vis2" class="svg_boxes"></svg>
+    </div>
+    <div id="container_vis3" class="grid">
+        <div id="title_vis3">
+            Relationship Between Non-Special Stats
+        </div>
+        <svg id="vis3" class="svg_boxes"></svg>
+    </div>
+</div>
+</body>
+</html>

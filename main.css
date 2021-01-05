@@ -1,0 +1,82 @@
+/* importing fonts from Google Font API */
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+@import url('https://fonts.googleapis.com/css?family=Sarabun:300,300i,400,700');
+
+html {
+    background: #356A88;
+    overflow: auto;
+    color: black;
+
+    font-family: "Calibri Light";
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+body {
+    padding: 0px 12px 12px 12px;
+    height: calc(100vh - 28px);
+
+    grid-template-rows: 8vh;
+}
+
+div#div_visuals{
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+
+    background-clip: content-box;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+div#container_vis2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid h1{
+    margin: 0px;
+}
+
+h1{
+    font-size: 3em;
+    color: white;
+    letter-spacing: normal;
+    padding-bottom: 0;
+}
+
+div[id^=title_vis] {
+    /*padding: 0px 20px;*/
+    font-weight: bold;
+    padding-top: 15px;
+    font-size: large;
+}
+
+div[id^=container_vis] {
+    background: white;
+    height: 100%;
+    padding: 0px 15px;
+    display: grid;
+    grid-template-rows: 25px;
+}
+
+.svg_boxes {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+g > text {
+    color: black;
+}
